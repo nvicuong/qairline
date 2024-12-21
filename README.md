@@ -7,6 +7,7 @@
 ## Step to run demo
 - clone this repository
 - `docker-compose up`
+- Now, the Q Airline is available. Visit http://localhost:3000/
 
 ## Or you want to build from Dockerfile
 - `docker-compose -f docker-compose-setup.yaml up --build`
