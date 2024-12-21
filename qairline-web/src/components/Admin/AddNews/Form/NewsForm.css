@@ -1,0 +1,64 @@
+/* .news-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  } */
+  
+  .news-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .news-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .news-form input,
+  .news-form select,
+  .news-form textarea,
+  .news-form button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .news-form textarea {
+    height: 20rem;
+    resize: vertical;
+  }
+  
+  /* .news-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .news-form button:hover {
+    background-color: #0056b3;
+  } */
+ .image-form-group {
+   display: flex;
+   align-items: center;
+   /* Căn giữa label và input theo chiều dọc */
+   gap: 10px;
+   margin-bottom: 20px;
+ }
+
+ .image-form-group label {
+   font-weight: bold;
+   /* Tùy chỉnh kiểu chữ nếu cần */
+ }
+
+ .image-form-group input[type="file"] {
+   padding: 5px;
+   /* Tùy chỉnh padding cho input */
+   font-size: 14px;
+   /* Tùy chỉnh kích thước chữ */
+ }

@@ -1,0 +1,36 @@
+.background-container {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // z-index: -1;
+    // top: 0;
+    position: relative;
+    width: 100%;
+    // background-color: #fff;
+    // min-width: 900px;
+
+    // display: flex;
+    // justify-content: center; /* Căn giữa theo trục ngang */
+    // align-items: center; /* Căn giữa theo trục dọc */
+
+    img {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // height: 600px;
+        height: 100vh;
+
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.3); /* Lớp mờ */
+        z-index: 1;
+    }
+}

@@ -1,0 +1,16 @@
+.navigator-path {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    .navigator-element-link {
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .navigator-separator {
+        margin: 0 5px;
+    }
+}

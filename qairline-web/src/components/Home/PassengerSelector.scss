@@ -1,0 +1,110 @@
+.passenger-custom {
+  width: 8rem;
+
+  .dropdown-label-custom {
+    position: relative;
+    padding: 10px;
+    // border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .dropdown-label-custom .arrow {
+    margin-left: 10px;
+    font-size: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown-label-custom .arrow.open {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-content-custom {
+    position: absolute;
+    top: 2.5rem;
+    left: 5px;
+    width: 250px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10;
+  }
+
+  .passenger-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+
+    label {
+      font-size: 1rem;
+      color: black !important;
+    }
+
+    select {
+      padding: 8px;
+      font-size: 1rem;
+      // border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #ffffff;
+      appearance: none;
+      transition:
+        border-color 0.3s,
+        box-shadow 0.3s;
+
+      &:focus {
+        border-color: #720455 !important; /* Màu border khi chọn */
+        box-shadow: 0 0 3px #910a67 (0, 123, 255, 0.5);
+      }
+
+      option {
+        padding: 8px 12px;
+        color: #333;
+      }
+
+      option:hover {
+        background-color: #720455; /* Hiệu ứng hover cho option */
+      }
+
+      option[selected] {
+        background-color: #720455; /* Màu nền cho tùy chọn đã chọn */
+        color: white; /* Màu chữ cho tùy chọn đã chọn */
+      }
+
+      option[disabled] {
+        color: #999; /* Màu chữ cho tùy chọn bị vô hiệu */
+      }
+    }
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+  }
+
+  .counter-btn {
+    width: 25px;
+    height: 25px;
+    background: #720455;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .counter-btn:hover {
+    background-color: #720455;
+  }
+}

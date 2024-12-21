@@ -1,0 +1,79 @@
+
+.dropdown-custom-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  .airport-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .airport-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .airport-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+  }
+  &:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .no-results {
+    padding: 10px 12px;
+    color: #888;
+    text-align: center;
+  }
+  
+  .airport-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .airport-icon {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  
+  .airport-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .airport-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .airport-country {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .airport-right {
+    text-align: right;
+  }
+  
+  .airport-code {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .airport-full-name {
+    font-size: 14px;
+    color: #888;
+  }
+  
+}
+

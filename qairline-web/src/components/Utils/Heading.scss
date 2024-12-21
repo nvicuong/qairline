@@ -1,0 +1,26 @@
+.heading-container {
+    margin-bottom: 20px;
+    h1 {
+        display: inline;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #030637;
+        // border-bottom: 2px solid #910a67;
+        line-height: 3rem;
+    }
+
+    .heading-link {
+        text-decoration: none; // Đảm bảo không có gạch dưới cho thẻ <Link>
+        color: inherit; // Kế thừa màu từ h1
+        &:hover {
+            color: #910a67; // Màu hover cho thẻ <Link>
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #030637;
+    }
+}

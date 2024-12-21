@@ -1,0 +1,39 @@
+services:
+  web:
+    build:
+      context: qairline-web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - env/web.env
+    networks:
+      - springapimysql-net
+
+  api:
+    build:
+      context: qairline-api
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - env/api.env
+    depends_on:
+      mysqldb:
+        condition: service_healthy
+    networks:
+      - springapimysql-net
+
+  mysqldb:
+    build:
+      context: qairline-mysql
+      dockerfile: Dockerfile
+    ports:
+      - "3306:3306"
+    env_file:
+      - env/mysqldb.env
+    networks:
+      - springapimysql-net
+networks:
+  springapimysql-net:
+    driver: bridge

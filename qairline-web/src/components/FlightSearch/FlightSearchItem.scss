@@ -1,0 +1,115 @@
+// .flight-result {
+//     display: flex;
+//     justify-content: space-between;
+//     border: 1px solid #ddd;
+//     border-radius: 5px;
+//     padding: 15px;
+//     margin-bottom: 10px;
+
+//     .flight-details {
+//         flex: 2;
+
+//         .arrow {
+//             margin: 0 5px;
+//         }
+
+//         .stops {
+//             color: #555;
+//             font-size: 0.9em;
+//         }
+
+//         .details-link {
+//             color: #007bff;
+//             text-decoration: none;
+//             font-size: 0.9em;
+
+//             &:hover {
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+
+//     .pricing {
+//         flex: 1;
+//         display: flex;
+//         flex-direction: column;
+//         text-align: right;
+
+//         .economy,
+//         .business {
+//             margin-bottom: 10px;
+
+//             p {
+//                 margin: 5px 0;
+//             }
+//         }
+//     }
+// }
+
+.flight-result {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.flight-time {
+    font-size: 1.5rem;
+    sup {
+        font-size: 0.5em;
+    }
+}
+
+.flight-type {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.flight-remain-seats {
+    font-size: 1em;
+    color: #555;
+}
+
+.flight-price {
+    font-size: 1.8rem;
+}
+
+.pricing {
+    div {
+        border-left: 1px solid #3c0753;
+        position: relative;
+        overflow: hidden;
+        p {
+            z-index: 2;
+            transition: color 0.3s;
+        }
+    }
+
+    div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: rgba(198, 190, 238, 0.5);
+        transition: width 0.5s;
+        z-index: 1;
+    }
+
+    div:hover::before {
+        width: 100%;
+    }
+
+    .economy {
+        border-left: 2px solid #024caa;
+    }
+
+    .business {
+        border-left: 2px solid #ec8305;
+    }
+}

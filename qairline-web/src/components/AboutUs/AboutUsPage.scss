@@ -1,0 +1,64 @@
+.about-us-page-container {
+    padding-top: 150px;
+    // background: #f2f3fa;
+    padding-bottom: 150px;
+    // margin: 0;
+
+    .content {
+        font-size: 1rem;
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.8); // Nền mờ cho nội dung
+        border-radius: 10px;
+        // padding: 20px;
+        // margin-top: 20px;
+
+        .about-us-intro {
+            p {
+                strong {
+                    color: #333; // Màu xanh chuyên nghiệp
+                    font-weight: 600;
+                }
+            }
+        }
+
+        h3 {
+            color: #3c0753; // Màu xanh chuyên nghiệp
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            // font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                // font-size: 16px;
+                line-height: 1.8;
+                padding-left: 20px;
+                position: relative;
+
+                &:before {
+                    content: "✔️";
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+
+        .about-us-history ul {
+            li {
+                margin-bottom: 10px;
+                &:before {
+                    content: "📍";
+                }
+            }
+        }
+    }
+}

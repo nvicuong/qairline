@@ -1,0 +1,66 @@
+.purple-button {
+    background-color: #720455;
+    color: #fff;
+    border: 2px solid transparent; /* Border ban đầu là trong suốt */
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+    box-sizing: border-box; /* Đảm bảo viền và padding không thay đổi kích thước */
+}
+
+.purple-button:hover {
+    background-color: #fff;
+    color: #720455;
+    border-color: #720455; /* Khi hover, thay đổi viền mà không làm thay đổi kích thước */
+}
+
+.white-button {
+    // width: 150;
+    background-color: #fff;
+    color: #720455;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: #720455;
+        color: #fff;
+    }
+}
+
+.form-group {
+    padding: 0;
+    // box-sizing: border-box;
+    input {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        // margin: 10px;
+
+        height: 50px;
+        // &::hover {
+        //     border: none;
+        // }
+
+        // &:focus {
+        //     border: none;
+        //     outline: none; /* Bỏ viền mặc định khi focus */
+        // }
+    }
+}

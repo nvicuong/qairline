@@ -1,0 +1,227 @@
+$color_1: #030637;
+$color_2: #720455;
+$background-color_1: #720455;
+$border-color_1: transparent;
+$border-color_2: #720455;
+
+.form-search-flight-input {
+    .type-of-flight {
+        .radio-button-container {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .radio-button {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+        .radio-button__input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            &:checked {
+                + {
+                    .radio-button__label {
+                        .radio-button__custom {
+                            background-color: $background-color_1;
+                            border-color: $border-color_1;
+                            transform: scale(0.8);
+                            box-shadow: 0 0 20px #4c8bf580;
+                        }
+                        color: $color_2;
+                    }
+                }
+            }
+        }
+        .radio-button__label {
+            display: inline-block;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            position: relative;
+            font-size: 18px;
+            color: $color_1;
+            font-weight: 600;
+            cursor: pointer;
+            // text-transform: uppercase;
+            transition: all 0.3s ease;
+            &:hover {
+                .radio-button__custom {
+                    transform: scale(1.2);
+                    border-color: $border-color_2;
+                    box-shadow: 0 0 20px #4c8bf580;
+                }
+            }
+        }
+        .radio-button__custom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #555;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .form-search-properties {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        // padding: 5%;
+        // padding-top: 30px;
+        // padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+
+        .form-group {
+            padding: 0;
+            // box-sizing: border-box;
+            input {
+                // border: 1px solid #ccc;
+                // border-radius: 10px;
+                // box-sizing: border-box;
+                border: none;
+
+                // width: 100%;
+                margin-bottom: 10px;
+                // padding: 10px;
+                box-sizing: border-box;
+                // margin: 10px;
+                margin: 0;
+
+                height: 50px;
+                width: 100%;
+                // &::hover {
+                //     border: none;
+                // }
+
+                &:focus {
+                    border: none;
+                    outline: none; /* Bỏ viền mặc định khi focus */
+                }
+            }
+        }
+
+        .selection-form-group {
+            border-left: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 0;
+            // height: 50px;
+
+            input {
+                height: 30px;
+            }
+
+            label {
+                display: block;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .form-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 150;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .form-search-properties {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            display: block;
+            width: 100%;
+            height: fit-content;
+            padding: 5%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 0;
+
+            .form-group {
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                display: block;
+                text-align: left;
+                margin: 10px;
+                padding-left: 10px;
+                input {
+                    border: none;
+                    height: 30px;
+                    &::hover {
+                        border: none;
+                    }
+
+                    &::focus {
+                        border: none;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+
+            .selection-form-group {
+                border-left: 1px solid #ccc;
+                padding-left: 10px;
+                margin: 10px;
+
+                label {
+                    display: block;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+
+        .form-button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            // button {
+            //     width: 150;
+            //     background-color: #720455;
+            //     color: #fff;
+            //     border: none;
+            //     border-radius: 20px;
+            //     padding: 10px 20px;
+            //     cursor: pointer;
+            //     font-size: 16px;
+            //     font-weight: 600;
+            //     transition: all 0.3s ease;
+
+            //     &:hover {
+            //         background-color: #720455;
+            //         color: #fff;
+            //     }
+            // }
+        }
+
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+        opacity: 1;
+        background: #fff;
+        color: #2c3e50;
+        // border-bottom: 0.25rem solid #bdc3c7;
+    }
+}
+.nodisplay {
+    visibility: hidden;
+}

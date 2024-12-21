@@ -1,0 +1,35 @@
+
+  .dropdown-custom-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    width: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+
+
+.form-group {
+  position: relative;
+  display: block;
+  text-align: left;
+  input {
+      border: none;
+      height: 30px;
+      &::hover {
+          border: none;
+      }
+
+      &::focus {
+          border: none;
+      }
+  }
+}

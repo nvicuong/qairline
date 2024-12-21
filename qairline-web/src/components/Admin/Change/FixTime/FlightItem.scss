@@ -1,0 +1,92 @@
+.flight-card-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 0px 16px;
+  background-color: #fff;
+  margin-bottom: 16px;
+  .flight-schedule {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    margin-right: 1rem;
+    .time-location {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .time {
+        font-size: 20px;
+        font-weight: bold;
+        color: #030637;
+      }
+
+      .airport,
+      .code {
+        font-size: 14px;
+        color: #888;
+      }
+    }
+  }
+  .flight-details {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 16px;
+    border-left: 1px solid #e5e5e5;
+    .duration,
+    .flight-info {
+      font-size: 14px;
+      color: #030637;
+      margin-bottom: 4px;
+    }
+    .details-link {
+      width: 50%;
+      font-size: 1rem;
+      color: #910a67;
+      cursor: pointer;
+    }
+  }
+  .ticket-info {
+    display: flex;
+    flex-direction: row;
+    // flex: 1;
+    .ticket-type {
+      padding: 20px 16px;
+      border-radius: 4px;
+      text-align: center;
+      height: 100%;
+      margin: 0px;
+    }
+
+    .economy {
+      background-color: #fff;
+      // margin-bottom: 8px;
+    }
+
+    .business {
+      background-color: #f2f3fa;
+    }
+
+    .label {
+      font-size: 16px;
+      font-weight: bold;
+      color: #2a5271;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 4px 0;
+    }
+
+    .seats-left {
+      font-size: 14px;
+      color: #888;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.admin-container {
+    // /* padding: 0.5rem 3.5rem; */
+    color: var(--black);
+    // background: linear-gradient(106.37deg, #ffe1bc 29.63%, #ffcfd1 51.55%, #f3c6f1 90.85%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .admin-glass {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        gap: 16px;
+        grid-template-columns: 12rem auto;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .admin-glass {
+        grid-template-columns: 10% auto;
+        overflow-y: scroll;
+    }
+}
+

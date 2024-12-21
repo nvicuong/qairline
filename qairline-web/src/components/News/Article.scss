@@ -1,0 +1,42 @@
+.item {
+    flex: 0 0 33.333%; /* Mỗi item chiếm 1/3 chiều rộng của slider */
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+
+    // border-radius: 5px;
+
+    img {
+        width: 100%; /* Đảm bảo ảnh nằm gọn trong item */
+        height: 285px;
+        object-fit: cover;
+        // border-radius: 5px;
+    }
+
+    .card-content {
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+        // position: relative;
+        // bottom: 10px;
+        // left: 10px;
+        // right: 10px;
+        background: #f2f3fa; /* Nền mờ cho phần văn bản */
+        // color: #fff;
+        padding: 10px;
+        // border-radius: 5px;
+        // font-family: $font-family_1;
+
+        h3 {
+            color: #030637;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            color: #333333;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+    }
+}

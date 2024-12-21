@@ -1,0 +1,35 @@
+.e-newsletter {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #f2f3fa;
+    padding: 20px;
+    // max-width: 400px;
+
+    .newsletter-form {
+        .form-group {
+            display: flex;
+            gap: 10px;
+
+            .newsletter-input {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+
+        .newsletter-success {
+            margin-top: 15px;
+            color: #108ab1;
+            font-weight: bold;
+        }
+
+        .newsletter-error {
+            margin-top: 15px;
+            color: #f04770;
+            font-weight: bold;
+        }
+    }
+}

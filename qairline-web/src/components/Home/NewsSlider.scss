@@ -1,0 +1,121 @@
+$color_1: #910a67;
+$font-family_1: monospace;
+$background-color_1: #ceb0c4;
+$background-color_2: #910a67;
+
+.slider {
+    width: 100%;
+    max-width: 100vw;
+    // height: 300px; /* Tăng chiều cao để phù hợp với card có văn bản */
+    height: fit-content;
+    margin: auto;
+    // position: relative;
+    overflow: hidden;
+
+    .list {
+        position: relative;
+        width: 100%; /* Chiều rộng của list đủ để chứa 3 item (100% mỗi item) */
+        // height: 100%;
+        display: flex;
+        transition: left 1s ease; /* Thêm hiệu ứng dịch chuyển */
+
+        // .item {
+        //     flex: 0 0 33.333%; /* Mỗi item chiếm 1/3 chiều rộng của slider */
+        //     box-sizing: border-box;
+        //     padding: 10px;
+        //     position: relative;
+
+        //     // border-radius: 5px;
+
+        //     img {
+        //         width: 100%; /* Đảm bảo ảnh nằm gọn trong item */
+        //         height: 285px;
+        //         object-fit: cover;
+        //         // border-radius: 5px;
+        //     }
+
+        //     .card-content {
+        //         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+        //         // position: relative;
+        //         // bottom: 10px;
+        //         // left: 10px;
+        //         // right: 10px;
+        //         background: #f2f3fa; /* Nền mờ cho phần văn bản */
+        //         // color: #fff;
+        //         padding: 10px;
+        //         // border-radius: 5px;
+        //         // font-family: $font-family_1;
+
+        //         h3 {
+        //             color: #030637;
+        //             margin: 0;
+        //             font-size: 1.5rem;
+        //             font-weight: bold;
+        //         }
+
+        //         p {
+        //             color: #333333;
+        //             margin-top: 5px;
+        //             font-size: 0.9rem;
+        //         }
+        //     }
+        // }
+    }
+
+    .buttons {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $background-color_1;
+            color: $color_1;
+            border: none;
+            font-family: $font-family_1;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    .dots {
+        position: absolute;
+        // bottom: -10px; /* Đặt cách đáy slider một khoảng nhỏ */
+        left: 50%;
+        transform: translateX(-50%); /* Căn giữa dấu chấm */
+        color: $color_1;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            background-color: $background-color_2;
+            margin: 5px;
+            border-radius: 50%;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        li.active {
+            width: 20px;
+            background-color: darken($background-color_2, 20%);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+}

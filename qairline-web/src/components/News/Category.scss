@@ -1,0 +1,15 @@
+.article-list {
+    list-style: none;
+    background: #fff;
+    padding: 0;
+}
+
+.article-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.article-item:hover {
+    color: #007bff;
+}

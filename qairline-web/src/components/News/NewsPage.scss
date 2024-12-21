@@ -1,0 +1,120 @@
+.news-page-container {
+    padding-top: 150px;
+    // background: #f2f3fa;
+    padding-bottom: 150px;
+    min-height: 1000px;
+}
+
+.right-border {
+    padding-right: 2px;
+    border-right: 2px solid #b42323;
+}
+
+.main-article {
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+
+    img {
+        width: 100%; /* Đảm bảo ảnh nằm gọn trong item */
+        height: 100%;
+        object-fit: cover;
+        // border-radius: 5px;
+    }
+
+    .main-article-content {
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+        // position: relative;
+        // bottom: 10px;
+        // left: 10px;
+        // right: 10px;
+        background: #fff; /* Nền mờ cho phần văn bản */
+        // color: #fff;
+        padding: 10px;
+        // border-radius: 5px;
+        // font-family: $font-family_1;
+
+        h3 {
+            color: #030637;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            color: #333333;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.news-container {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.categories {
+    height: fit-content;
+    // background: #fff;
+}
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // Bố trí các bài viết thành lưới
+    gap: 20px;
+    margin-top: 20px;
+
+    .article-item {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        position: relative;
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+            text-overflow: ellipsis; // Thu gọn text nếu quá dài
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        // Hiệu ứng khi hover
+        &:hover {
+            transform: translateY(-5px); // Nhấc bài viết lên
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            background-color: #f8f9fa;
+
+            h4 {
+                color: #6f42c1; // Đổi màu tiêu đề
+            }
+        }
+
+        // Nút chi tiết (nếu cần)
+        .read-more {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #6f42c1;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #54268b;
+                text-decoration: underline;
+            }
+        }
+    }
+}

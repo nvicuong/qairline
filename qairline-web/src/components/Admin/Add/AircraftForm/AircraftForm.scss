@@ -1,0 +1,13 @@
+.aircraft-form-custom {
+    // margin: auto 5%;
+    .split-group {
+        display: flex;
+        justify-content: space-between;
+        .split-form-item {
+            width: 48%;
+        }
+    }
+    button {
+        margin-top: 20px;
+    }
+}

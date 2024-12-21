@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: demosql
+  datasource:
+    url: jdbc:mysql://localhost:3306/Qairline
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      #ddl_auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+jwt:
+  signerKey: "2XsG3MZ89gXMdrzAfvwurS6QDIxq82OCM+texBMoI+Ur4h6i1yuXEahYpKt4vVED"
+  valid-duration: 86400 #in second
+  refreshable-duration: 864000 #in seconds
+image:
+  path: "/home/cuongnv/workplace/Be_Web"

@@ -1,0 +1,26 @@
+// Import các biến của Bootstrap
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/maps"; // Thêm import này để đảm bảo biến $gutters được định nghĩa
+// @import "~bootstrap/scss/mixins";
+
+// // Import grid để sử dụng layout responsive
+// @import "~bootstrap/scss/grid";
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+$custom-font: "Afacad", sans-serif;
+
+body {
+    font-family: $custom-font;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $custom-font;
+}
+
+p {
+    font-family: $custom-font;
+}

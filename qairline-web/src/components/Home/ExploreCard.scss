@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+// :root {
+//     /* Colors */
+//     --brand-color: hsl(46, 100%, 50%);
+//     --black: hsl(0, 0%, 0%);
+//     --white: hsl(0, 0%, 100%);
+//     /* Fonts */
+//     --font-title: "Montserrat", sans-serif;
+//     --font-text: "Lato", sans-serif;
+// }
+
+/* RESET */
+
+/* Box sizing rules */
+
+.explore_card {
+    /* Colors */
+    --brand-color: #720455;
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Lato", sans-serif;
+
+    h2 {
+        font-size: 2.25rem;
+        font-family: var(--font-title);
+        color: var(--white);
+        line-height: 1.1;
+    }
+
+    p {
+        font-family: var(--font-text);
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--white);
+    }
+
+    .card {
+        place-items: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // border-radius: 0.625rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+
+    .card__background {
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+    }
+    .card__title {
+        position: absolute;
+        width: fit-content;
+    }
+
+    .bottom-left {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .bottom-right {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .top-left {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .top-right {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .card__title::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Nằm sát dưới của tiêu đề */
+        left: 0;
+        height: 3px; /* Độ dày của border */
+        width: 0; /* Ban đầu không hiển thị */
+        background-color: var(--brand-color);
+        transition: width 300ms ease-in; /* Hiệu ứng từ từ mở rộng */
+    }
+
+    .card:hover .card__title::after {
+        width: 100%; /* Khi hover, border sẽ mở rộng hết chiều rộng */
+    }
+
+    @media (any-hover: hover) and (any-pointer: fine) {
+        .card__background {
+            transition: transform 300ms ease-in;
+        }
+
+        .card:hover .card__background,
+        .card:focus-within .card__background {
+            transform: scale(1.2);
+        }
+    }
+}

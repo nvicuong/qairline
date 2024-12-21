@@ -1,0 +1,112 @@
+.form-add-custom {
+  #form-add {
+    // padding: 20px;
+    border-radius: 8px;
+  }
+
+  .form-add-address {
+    display: flex;
+    justify-content: space-between;
+
+    .form-add-airport {
+      width: 48%;
+    }
+  }
+
+  .form-add-day {
+    display: flex;
+    justify-content: space-between;
+
+    .form-add-day-item {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+    }
+  }
+
+  .form-airplane {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-add-ticket {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      padding: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  .form-submit {
+    margin-top: 10px;
+  }
+
+  .form-custom {
+    input {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      height: 50px;
+    }
+  }
+}
+
+// #form-add {
+//     width: 50%;
+//     margin: 0 auto;
+//     padding: 20px;
+//     border: 1px solid #ccc;
+//     border-radius: 8px;
+//     background-color: #f9f9f9;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   }
+
+//   #form-add h1 {
+//     text-align: center;
+//     color: #333;
+//     margin-bottom: 20px;
+//     font-size: 24px;
+//   }
+
+//   /* Định dạng các label */
+//   #form-add label {
+//     display: block;
+//     font-weight: bold;
+//     color: #555;
+//   }
+//   #form-add input[type="text"],
+//   #form-add input[type="datetime-local"],
+//   #form-add select {
+//     width: 100%;
+//     padding: 10px;
+//     border: 1px solid #ddd;
+//     border-radius: 4px;
+//     font-size: 14px;
+//     box-sizing: border-box;
+//   }
+
+//   #form-add input:focus,
+//   #form-add select:focus {
+//     border-color: #007bff;
+//     outline: none;
+//     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+//   }
+
+//   button[type="submit"] {
+//     padding: 10px;
+//     margin-top: 10px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     cursor: pointer;
+//     border-radius: 4px;
+//   }

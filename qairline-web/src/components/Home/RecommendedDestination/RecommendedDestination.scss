@@ -1,0 +1,17 @@
+.cross-bar {
+    width: 90%; /* Chiều rộng toàn bộ */
+    height: 30vh; /* Chiều cao cố định */
+    background-color: #3c0753; /* Màu nền */
+    z-index: -1; /* Đưa xuống dưới `content` */
+
+    position: absolute; /* Định vị tuyệt đối */
+    top: 50%; /* Đưa thanh vào giữa */
+    left: 5%; /* Đưa thanh vào giữa */
+    transform: translateY(-60%); /* Dịch xuống 50% chiều cao, căn giữa theo trục dọc */
+}
+
+.recommended-destination-container {
+    position: relative; /* Để cross-bar căn chỉnh theo phần tử này */
+    margin-top: 100px;
+    // padding: 50px 0;
+}

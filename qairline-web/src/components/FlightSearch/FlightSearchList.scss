@@ -1,0 +1,153 @@
+/* BookingConfirmationModal.scss */
+
+.modal-overlay-custom {
+  position: fixed;
+  inset: 0;
+  /* top: 0; right: 0; bottom: 0; left: 0; */
+  background: rgba(0, 0, 0, 0.6);
+  /* Tối nền với độ trong suốt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.btn-increase,
+.btn-decrease {
+  // padding: 5px 10px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #720455;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.quantity-section span {
+  margin: 0 10px;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: slideUp 0.4s ease-in-out;
+
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .ticket-details {
+    text-align: left;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+
+    p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+
+      strong {
+        font-weight: 600;
+        color: #222;
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    button {
+      flex: 1;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition:
+        transform 0.2s,
+        background-color 0.3s;
+    }
+
+    .confirm-button {
+      background: #720455;
+      color: white;
+
+      &:hover {
+        background: #720455;
+        transform: scale(1.05);
+      }
+    }
+
+    .cancel-button {
+      background: #f44336;
+      color: white;
+
+      &:hover {
+        background: #e53935;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hiệu ứng slide-up */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

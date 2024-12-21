@@ -1,0 +1,217 @@
+.order-history-custom {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  .header {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #030637;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+  .order-count {
+    font-size: 16px;
+    color: gray;
+  }
+
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .filters input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  // .filter-button {
+  //   padding: 8px 16px;
+  //   font-size: 14px;
+  //   color: #fff;
+  //   background-color: #007bff;
+  //   border: none;
+  //   border-radius: 4px;
+  //   cursor: pointer;
+  // }
+
+  // .filter-button:hover {
+  //   background-color: #0056b3;
+  // }
+
+  .tableContainer {
+    // margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .transactionTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .transactionTable th,
+  .transactionTable td {
+    padding: 12px;
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .transactionTable th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+
+  .transactionTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .transactionTable tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .detailButton {
+    padding: 6px 12px;
+    font-size: 1rem;
+  }
+  .deleteButton {
+    padding: 6px 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  // .detailButton:hover {
+  //   background-color: #0056b3;
+  // }
+
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .prev-button,
+  .next-button,
+  .page-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+  }
+
+  .page-button.active {
+    background-color: #910a67;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .prev-button.disabled,
+  .next-button.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .page-button:hover,
+  .prev-button:hover:not(.disabled),
+  .next-button:hover:not(.disabled) {
+    background-color: #910a67;
+    color: #fff;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: left;
+
+    h3 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #030637;
+    }
+    .modal-button {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .tableContainer {
+      padding: 0;
+    }
+
+    .transactionTable {
+      border: none;
+    }
+
+    .transactionTable thead {
+      display: none;
+    }
+
+    .transactionTable tr {
+      display: block;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .transactionTable td {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border: none;
+    }
+
+    .transactionTable td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #555;
+    }
+
+    // .detailButton,
+    // .deleteButton {
+    //   width: 100%;
+    //   text-align: center;
+    //   margin-top: 10px;
+    // }
+  }
+  .filter-container {
+    input {
+      margin-right: 10px;
+    }
+  }
+}

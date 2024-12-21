@@ -1,0 +1,62 @@
+.form-search-flight-input {
+  .form-search-properties {
+    .form-group {
+      width: 40%;
+    }
+  }
+
+  .modal-overlay-custom {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.4s ease-in-out;
+
+    .modal-content {
+      background: #ffffff;
+      width: 90%;
+      max-width: 500px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      animation: slideUp 0.4s ease-in-out;
+      z-index: 10000;
+
+      h2 {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .ticket-details {
+        text-align: left;
+        margin: 20px 0;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+        border: 1px solid #eaeaea;
+
+        p {
+          margin: 8px 0;
+          font-size: 0.95rem;
+
+          strong {
+            font-weight: 600;
+            color: #222;
+          }
+        }
+      }
+    }
+  }
+}

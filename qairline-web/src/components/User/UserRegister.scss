@@ -1,0 +1,32 @@
+.user-resign-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 50%;
+    padding: 0;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+
+    form {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        button {
+            margin-top: 20px;
+        }
+    }
+
+    .social-login {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        button {
+            width: fit-content;
+            border: 0;
+            background-color: transparent;
+        }
+    }
+}

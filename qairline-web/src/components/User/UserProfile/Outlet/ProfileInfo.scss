@@ -1,0 +1,85 @@
+.profile-custom {
+  flex: 3;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  .header {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #030637;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    gap: 10px;
+  }
+  .info-row {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    // margin-bottom: 10px;
+
+    .field-title {
+      font-weight: 600;
+      // font-size: 1.2rem;
+      // color: #666;
+    }
+
+    .styled-input {
+      // width: 100%; /* Full width */
+      width: 250px;
+      padding: 10px; /* Nội dung bên trong */
+      font-size: 16px; /* Kích thước chữ */
+      border: 1px solid #ccc; /* Đường viền */
+      border-radius: 5px; /* Bo góc */
+      outline: none; /* Loại bỏ đường viền mặc định khi focus */
+      border-color: #910a67; /* Đổi màu viền khi focus */
+      transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease; /* Hiệu ứng */
+    }
+
+    .styled-input:focus {
+      border-color: #910a67; /* Đổi màu viền khi focus */
+      box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Hiệu ứng đổ bóng */
+    }
+
+    span {
+      font-size: 1.2rem;
+    }
+
+    .highlight {
+      color: #007bff;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      color: #007bff;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .update-info {
+    button {
+      padding: 7px 20px;
+      margin-right: 5px;
+    }
+  }
+}

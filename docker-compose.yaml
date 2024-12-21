@@ -1,0 +1,33 @@
+services:
+  mysqldb:
+    image: kakarazi/qairline_mysqldb
+    ports:
+      - "3306:3306"
+    env_file:
+      - env/mysqldb.env
+    networks:
+      - springapimysql-net
+
+  web:
+    image: kakarazi/qairline_web
+    ports:
+      - "3000:3000"
+    env_file:
+      - env/web.env
+    networks:
+      - springapimysql-net
+
+  api:
+    image: kakarazi/qairline_api
+    ports:
+      - "8080:8080"
+    env_file:
+      - env/api.env
+    depends_on:
+      mysqldb:
+        condition: service_healthy
+    networks:
+      - springapimysql-net
+networks:
+  springapimysql-net:
+    driver: bridge

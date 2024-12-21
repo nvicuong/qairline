@@ -1,0 +1,43 @@
+.sidebar-user-custom {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    .side-item {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+      font-size: 1.5rem;
+
+      i {
+        margin-bottom: 5px;
+      }
+
+      &:hover {
+        background: #f9f9f9;
+      }
+
+      span {
+        font-size: 0.8rem;
+        color: #888;
+      }
+
+      &.active {
+        color: #720455; /* Màu tím */
+        font-weight: bold;
+        background: #f0f0ff; /* Màu nền nhấn mạnh */
+        border-left: 4px solid #720455; /* Đường viền trái */
+      }
+    }
+  }
+}
